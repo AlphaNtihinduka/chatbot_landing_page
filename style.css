@@ -1,0 +1,72 @@
+.modal {
+    position: relative;
+  }
+  
+  .modal-content {
+    width: 375px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    top: 20px;
+  }
+  
+  .chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 50%;
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+  }
+  
+  .chat-window {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 9999;
+    width: 350px;
+    height: 500px;
+    display: none;
+  }
+  
+  .chat-header {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .chat-header h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #bbb;
+    font-size: 20px;
+  }
+  
+  .close-btn:hover {
+    color: #000;
+  }
+  
+  iframe {
+    width: 100%;
+    border: none;
+  }
+  
