@@ -1,72 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+html{
+  color-scheme: dark light;
+}
+
+:root{
+--primary-color: #0b2956;
+--secondary-color: #222;
+--color-white: #fff;
+--color-black: #000;
+--color-light-blue: #1b3a6a;
+--color-text: #777;
+}
+
+
+/* Navbar */
+.navbar{
+  padding: 10px 80px;
+  background: var(--primary-color)!important;
+  margin-bottom: 100px;
+  border-bottom: 5px solid var(--secondary-color);
+}
+
+a.navbar-brand{
+  color: var(--color-white)!important;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: 'Alfa Slab One', cursive;
+}
+
+.nav-link{
+  color: var(--color-white)!important;
+  font-size: 1rem;
+  margin-right: 30px!important;
+}
+
+.nav-link:hover{
+  color: var(--color-text)!important;
+}
+
+/* Hero Section */
+.hero-section{
+  margin-bottom: 100px;
+}
+
+.col-lg-6{
+  margin-bottom: 30px;
+}
+
+.img-fluid{
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* Feature Section */
+.features-section{
+  margin-bottom: 100px;
+}
+
+.feature-box{
+  background-color: var(--secondary-color);
+  color: var(--color-white);
+  padding: 30px;
+  border-radius: 30px;
+  transition: .5s;
+  margin-bottom: 30px;
+}
+
+.feature-box:hover{
+  transform: translateY(-5px);
+}
+
+.feature-box p{
+color: var(--color-text);
+}
+
+.main-title{
+  color: var(--color-light-blue);
+}
+
+/* testimonial-section */
+.testimonials-section{
+  background: 
+  linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
+   url('https://pbs.twimg.com/ext_tw_video_thumb/1604743934395179009/pu/img/DSEP4kFVUTYEJpvM?format=jpg&name=large');
+  height: 50vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 100px;
+}
+
+.carousel-indicators{
+  position: absolute;
+  top: 100%;
+}
+
+/* Modal */
 .modal {
-    position: relative;
-  }
-  
-  .modal-content {
-    width: 375px;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    top: 20px;
-  }
-  
-  .chat-icon {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #fff;
-    color: #000;
-    border-radius: 50%;
-    font-size: 24px;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    z-index: 9999;
-  }
-  
-  .chat-window {
-    position: fixed;
-    bottom: 100px;
-    right: 20px;
-    background-color: #fff;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    z-index: 9999;
-    width: 350px;
-    height: 500px;
-    display: none;
-  }
-  
-  .chat-header {
+  position: relative;
+}
+
+.modal-content {
+  width: 375px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  top: 20px;
+}
+
+.chat-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffffff;
+  color: var(--color-light-blue);
+  border-radius: 50%;
+  font-size: 24px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.chat-window {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 9999;
+  width: 350px;
+  height: 500px;
+  display: none;
+}
+
+.chat-header {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chat-header h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #bbb;
+  font-size: 20px;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+
+iframe {
+  width: 100%;
+  border: none;
+}
+
+.footer-section{
+  background-color: var(--secondary-color);
+  padding: 20px;
+  color: var(--color-white);
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .navbar{
     padding: 10px;
-    border-bottom: 1px solid #ddd;
-    display: flex;
-    justify-content: space-between;
   }
-  
-  .chat-header h4 {
-    margin: 0;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .close-btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: #bbb;
-    font-size: 20px;
-  }
-  
-  .close-btn:hover {
-    color: #000;
-  }
-  
-  iframe {
-    width: 100%;
-    border: none;
-  }
-  
+
+  a.navbar-brand{
+    font-size: 1.3rem;
+  }  
+}
